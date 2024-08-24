@@ -93,7 +93,7 @@ Navigate to the test directory and add TestNG and other dependencies to your pom
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.16.0</version> <!-- Check for the latest version -->
+			<version>4.16.0</version> 
 		</dependency>
 
 
@@ -107,7 +107,7 @@ Navigate to the test directory and add TestNG and other dependencies to your pom
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>4.5.13</version> <!-- Use the latest version -->
+			<version>4.5.13</version> 
 		</dependency>
 
 
