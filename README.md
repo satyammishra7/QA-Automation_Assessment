@@ -6,10 +6,14 @@ This repository provides the instructions and resources for deploying and verify
 
 
 Project Overview
+
+
 This project demonstrates how to deploy a frontend and backend service to a local Kubernetes cluster, verify their communication, and automate testing to ensure correct integration.
 
 
 Prerequisites
+
+
 Before you begin, ensure you have the following tools installed:
 * Docker
 * Minikube
@@ -83,6 +87,36 @@ Automation Testing
 
 
 Navigate to the test directory and add TestNG and other dependencies to your pom.xml:
+
+<dependencies>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.16.0</version> <!-- Check for the latest version -->
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.0.0</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.13</version> <!-- Use the latest version -->
+		</dependency>
+
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.5.3</version>
+		</dependency>
+	</dependencies>
 
 
 8. Compile and Run Tests
